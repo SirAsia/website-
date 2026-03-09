@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main{
+    width: 100%;
+    background-image: url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 109vh;
+    position: relative;
+}
+
+.image1{
+    position: absolute;
+    right: 30px;       
+    top: 80px;        
+    width: 800px; 
+    height: auto;     
+    pointer-events: none; 
+    border: 5px solid orange;
+    border-radius: 10%;
+
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    padding-right: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 75px;
+}
+.logo{
+    transform: scale(1.5);
+    display: block;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+    padding-left: 40px;
+    float: left;
+    padding-top: 5px;
+    
+}
+.menu{
+    padding-left: 200px;
+    width: 400px;
+     height: 70px;
+     font-size: 30px;
+   }
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+ul li{
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+ul li a:hover{
+   
+    color: orange;
+    transform: scale(1.2);
+
+}
+.content{
+    font-family: Arial, sans-serif;
+    width: 1200px;
+    height: auto;
+    margin-top: 110px ;
+    margin-left: 20px;
+    position: relative;
+    color: white;
+}
+.content .par{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    padding-left: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.cn{
+    font-size: 20px;
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+     transition: 0.3s ease-in-out;
+     display: inline-block;
+
+}
+.cn a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+   
+    
+}
+.cn:hover{
+    background-color: rgb(224, 147, 2);
+    transform: scale(1.1);
+
+}
+.content span{
+    color: orange;
+}
+
+
+
+
+
+
+
+

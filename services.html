@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Services – Texture Packs Nepal</title>
+    <link rel="icon" type="image/png" href="./logo.png">
+    <link rel="stylesheet" href="css.css">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            font-weight: 10px;
+            color: orange;
+        }
+
+        .services-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .tabs {
+            margin-top: 30px;
+        }
+
+        .tab-btn {
+            padding: 12px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            background: rgb(3, 32, 160);
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .tab-btn:hover {
+            background: orange;
+        }
+
+        .tab-btn.active {
+            background: orange;
+        }
+
+        .tab-content {
+            display: none;
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .price {
+            font-size: 22px;
+            color: orange;
+            margin-top: 15px;
+        }
+
+        .features {
+            margin-top: 15px;
+            line-height: 1.8;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo"><img src="./logo1.png"></h2>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./services.html">SERVICES</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-container">
+        <h1>Our Texture Pack Services</h1>
+        <p style="color: white;">
+            Choose your preferred resolution below. All packs are custom-made
+            and optimized for performance and visual quality.
+        </p>
+
+       
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('pack16')">16x</button>
+            <button class="tab-btn" onclick="openTab('pack32')">32x</button>
+            <button class="tab-btn" onclick="openTab('pack64')">64x</button>
+            <button class="tab-btn" onclick="openTab('pack128')">128x+</button>
+            <button class="tab-btn" onclick="openTab('overlay')">Overlays</button>
+        </div>
+
+       
+        <div id="pack16" class="tab-content active">
+            <h2>16x Resolution Pack</h2>
+            <div class="features">
+                ✔ Optimized for PvP<br>
+                ✔ Smooth performance on low-end PCs<br>
+                ✔ Custom swords, tools & GUI<br>
+                ✔ Clean and minimal design
+            </div>
+            <div class="price" style="color: orangered;">Starting at NPR 1,000</div>
+        </div>
+
+       
+        <div id="pack32" class="tab-content">
+            <h2>32x Resolution Pack</h2>
+            <div class="features">
+                ✔ Higher detail textures<br>
+                ✔ Custom blocks & items<br>
+                ✔ GUI redesign included<br>
+                ✔ Balanced quality & performance
+            </div>
+            <div class="price" style="color: orangered;" >Starting at NPR 2,000</div>
+        </div>
+
+        
+        <div id="pack64" class="tab-content">
+            <h2>64x Resolution Pack</h2>
+            <div class="features">
+                ✔ High-definition textures<br>
+                ✔ Advanced detailing<br>
+                ✔ Professional quality finish
+            </div>
+            <div class="price" style="color: orangered;" >Starting at NPR 3,000</div>
+        </div>
+
+        
+        <div id="pack128" class="tab-content">
+            <h2>128x+ Resolution (Mashups Only)</h2>
+            <div class="features">
+                ✔ Mashups of existing packs<br>
+                ✔ Custom recolors & edits<br>
+                ✔ Optimized for high-end systems<br>
+                ✔ Not fully hand-drawn
+            </div>
+            <div class="price" style="color: orangered;" >Starting at NPR 3,000</div>
+        </div>
+
+        <div id="overlay" class="tab-content">
+            <h2>Overlays (Sky / Hypixel Bridge Duels) </h2>
+            <div class="features">
+                ✔ Sky editing overlays<br>
+                ✔ Custom recolors & edits
+                
+            </div>
+            <div class="price" style="color: orangered;" >Starting at NPR 500</div>
+        </div>
+
+        <div style="margin-top:40px;">
+            <strong>Ready to order?</strong><br>
+            Contact us through the Contact page or email:
+            <br><span style="color:orange;">texturePacksNepal@gmail.com</span>
+        </div>
+
+    </div>
+
+<script>
+function openTab(tabId) {
+    var contents = document.getElementsByClassName("tab-content");
+    var buttons = document.getElementsByClassName("tab-btn");
+
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].classList.remove("active");
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+    }
+
+    document.getElementById(tabId).classList.add("active");
+    event.currentTarget.classList.add("active");
+}
+</script>
+
+</body>
+</html>
